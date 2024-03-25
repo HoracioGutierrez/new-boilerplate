@@ -12,7 +12,7 @@ export default async function LayoutNavbar() {
     const session = await auth()
     
     return (
-        <nav className="flex items-center gap-4 fixed top-10 border-primary py-2 px-4 rounded-[2rem] border-2 dark:hover:bg-primary-foreground hover:bg-background-100 z-50">
+        <nav className="flex items-center gap-4 fixed top-5 border-primary py-2 px-4 rounded-[2rem] border-2 dark:hover:bg-primary-foreground hover:bg-background-100 z-50 w-[calc(100%-2rem)] sm:w-fit justify-center transition-all">
             <Button variant={"ghost"} className="rounded-[2rem] hidden md:inline">
                 <Link href="/">home</Link>
             </Button>
