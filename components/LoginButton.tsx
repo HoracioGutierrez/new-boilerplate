@@ -12,7 +12,7 @@ export default function LoginButton() {
     return (
         <Button variant={"ghost"} onClick={handleClick} className="text-text-900 rounded-3xl font-bold text-md space-x-1 outline-none">
             <span className="hidden md:inline">login</span>
-            <LogInIcon/>
+            <LogInIcon />
         </Button>
     )
 }
