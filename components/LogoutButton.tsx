@@ -1,11 +1,13 @@
 "use client"
 
-import { signOut } from "next-auth/react"
+import { signOut, useSession } from "next-auth/react"
 import { Button } from "./ui/button"
 import { LogOutIcon } from "lucide-react"
 
 export default function LogoutButton() {
 
+    console.log(useSession())
+    
     const handleClick = () => {
         signOut()
     }

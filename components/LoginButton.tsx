@@ -1,9 +1,11 @@
 "use client"
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import { Button } from "./ui/button";
 import { LogInIcon } from "lucide-react";
 
 export default function LoginButton() {
+
+    console.log(useSession())
 
     const handleClick = () => {
         signIn("google")
