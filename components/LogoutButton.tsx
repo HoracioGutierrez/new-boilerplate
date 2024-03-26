@@ -6,8 +6,9 @@ import { LogOutIcon } from "lucide-react"
 
 export default function LogoutButton() {
 
-    console.log(useSession())
-    
+    const session = useSession()
+    console.log(session)
+
     const handleClick = () => {
         signOut()
     }
